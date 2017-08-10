@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.linh0nguyen.banhang.activity.GioHangActivity">
+    <android.support.v7.widget.Toolbar
+        android:background="#17309e"
+        app:title="Giỏ hàng"
+        android:id="@+id/toolBarGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:id="@+id/lvGioHang">
+
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#F10"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:id="@+id/tvGioHangTongTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:textColor="#2fce14"
+                android:text="THANH TOÁN GIỎ HÀNG"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGioHangThanhToan"/>
+            <Button
+                android:layout_marginTop="10dp"
+                android:textColor="#2fce14"
+                android:text="TIẾP TỤC MUA HÀNG"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGioHangTiepTucMuaHang"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

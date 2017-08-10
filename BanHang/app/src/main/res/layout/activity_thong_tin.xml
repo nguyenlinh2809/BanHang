@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarThongTin"
+        app:title="Thông tin"
+        android:background="#1c3380"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#121111"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liên hệ với chúng tôi"/>
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/thanhtoan"
+            android:drawableLeft="@drawable/map"
+            android:textColor="#133591"
+            android:text="549/45/3 Xô Viết Nghệ Tĩnh, phường 26, Bình Thạnh, Hồ Chí Minh"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/thanhtoan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.linh0nguyen.banhang.activity.ThongTinActivity" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
